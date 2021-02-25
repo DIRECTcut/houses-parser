@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npm install && tsc && node dist/index.js",
-    "test": "mocha -r ts-node/register tests/**/*.spec.ts --exit",
-    "dev": "./node_modules/.bin/tsc-watch --onSuccess \"node ./dist/index.js\""
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts --exit"
   },
   "keywords": [],
-  "author": "",
+  "author": "DIRECtcut",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.14",
