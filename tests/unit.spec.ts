@@ -1,7 +1,7 @@
 import HousesParser from '../src/HousesParser'
 import { describe } from 'mocha'
 import { expect } from 'chai'
-import Houses from '../src/Houses'
+import Houses from '../src/HousesInterface'
 
 const sampleParser = new HousesParser('четные 2-28, нечетные 1-21')
 
@@ -95,7 +95,7 @@ describe('HousesParser', () => {
   describe('private getBorderNumsFromRange()', () => {
     const getBorderNumsFromRange = sampleParser['getBorderNumsFromRange']
 
-    it('should return a tuple of numbers', () => {
+    it('should return borders of a range', () => {
       expect(getBorderNumsFromRange('1-20')).to.eql([1, 20])
       expect(getBorderNumsFromRange('0-100')).to.eql([0, 100])
       expect(getBorderNumsFromRange('30-30')).to.eql([30, 30])

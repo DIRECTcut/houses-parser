@@ -1,4 +1,4 @@
-import Houses from './Houses'
+import Houses from './HousesInterface'
 
 export default class HousesParser {
   //предполагается, что диапазон задан включительно
