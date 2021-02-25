@@ -1,4 +1,4 @@
 node_modules
-.rettierrc.json
+.prettierrc.json
 .vscode
 dist
